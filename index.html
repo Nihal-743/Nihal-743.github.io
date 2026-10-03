@@ -1,442 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nihal | Front-End Developer &amp; Web Designer, New Delhi</title>
+  <meta name="description" content="Nihal - front-end developer and web designer in New Delhi. 1.5+ years of experience, 50+ live websites built with HTML, CSS, JavaScript, Tailwind CSS and Bootstrap.">
+  <link rel="canonical" href="https://nihal-743.github.io/">
+  <meta name="theme-color" content="#0b0b0c">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- for whatsapp / linkedin previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nihal | Front-End Developer &amp; Web Designer, New Delhi">
+  <meta property="og:description" content="Nihal - front-end developer and web designer in New Delhi. 1.5+ years of experience, 50+ live websites built with HTML, CSS, JavaScript, Tailwind CSS and Bootstrap.">
+  <meta property="og:image" content="https://nihal-743.github.io/img/nihal.jpg">
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c8f031'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='800' font-size='19' fill='%230b0b0c' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1791051379">
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
 
-    <div id="header">
-        <nav class="navbar navbar-expand-md " id="navbar">
-          <div class="container-fluid">
-            <a class="navbar-brand nav-left" href="#"><span class="p-2"><b>Portfolio</b></a>
-            <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon "></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-    
-    
-              </ul>
-              <form class="d-flex  " role="search ">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-right toogle ">
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#service">Service</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#resume">Resume</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link " href="#project">Project</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-    
-                </ul>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </div>
+<!-- svg icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.2 1.5-2.2 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zm1.8 13.1H3.6V9h3.5v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4zM17.5 6.5h.01"/></g></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zM17.61 20.64h2.04L6.49 3.24H4.3z"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.5 6.4a2.8 2.8 0 0 0-1.9-2C18.9 4 12 4 12 4s-6.9 0-8.6.5a2.8 2.8 0 0 0-1.9 2A29 29 0 0 0 1 11.8a29 29 0 0 0 .5 5.3 2.8 2.8 0 0 0 1.9 1.9c1.7.5 8.6.5 8.6.5s6.9 0 8.6-.5a2.8 2.8 0 0 0 1.9-2 29 29 0 0 0 .5-5.2 29 29 0 0 0-.5-5.4z"/><path d="m9.8 15 5.7-3.2-5.7-3.3z"/></g></symbol>
+  <symbol id="i-dribbble" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8.6 2.8c4.3 6 6 9.4 8 17.7M19.1 5.1c-3.7 4.4-8.9 5.7-16.9 5.9M21.8 12.8c-3.5-.9-6.7-.8-9 0-2.6.9-5 2.9-7.4 6.3"/></g></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></g></symbol>
+</svg>
 
-      <!-- main-sec -->
+<!-- header -->
+<header class="header" id="header">
+  <div class="container header-in">
+    <a href="#top" class="logo" aria-label="Nihal">
+      <span class="logo-name">nihal<i>.</i></span>
+      <span class="logo-role">Front-End Developer<b> · Web Designer</b></span>    </a>
 
-      <div id="main-sec">
-        <div class="container-fluid head">
-            <div class="row">
-                <div class="portfolio">
-                <div class="container port">
-                    <div class="row">
-                        <div class="col-md-6 left ">
-                            <div class="banner-title">
-                                <h2>Welcome</h2>
-                                <h3>I'm Nihal</h3>
-                                <p id="typing-eff">a <span id="text"></span></p>
-                              </div>
-                              <div class="icon ">
-                                <a href="https://www.facebook.com/profile.php?id=100009390423331&mibextid=ZbWKwL"><i class="fa-brands fa-facebook px-2 "></i></a>
-                                <a href=""><i class="fa-brands fa-twitter px-2"></i></a>
-                                <a href="https://github.com/Nihal-743?tab=repositories"><i class="fa-brands fa-github px-2"></i></a>
-                                <a href="https://www.linkedin.com/in/nihal-singh-519897305/"><i class="fa-brands fa-linkedin-in px-2"></i></a>
-                                </div>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="cv/Nihal_Resume.pdf" class="btn btn-lime nav-cv" target="_blank" rel="noopener">View Resume</a>
+    </nav>
 
-                                <div class="cv">
-                                    <a href="cv/Nihal Resume (2).pdf"><button type="button" class="btn btn-outline-dark">Download CV</button>
-                                    </a>
-                                  </div>
-      
-                        </div>
-                        <div class="col-md-6 right">
-                            <div class="banner-photo">
-                                <img src="img/profile.jpg" alt="">
-                                
-                                  
-                              </div>
+    <a href="cv/Nihal_Resume.pdf" class="btn btn-lime btn-sm header-cta" target="_blank" rel="noopener">
+      Resume <svg class="ic"><use href="#i-arrow"/></svg>
+    </a>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
 
-            </div>
+<main id="main">
+
+  <!-- hero -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="badge"><span class="pulse"></span> Open to full-time roles in Delhi NCR</p>
+
+        <p class="hello">Hi, I&#039;m Nihal.</p>
+        <h1><span class="l1">Front-end developer who builds</span><br><span class="typed" id="typed" data-words="[&quot;responsive sites.&quot;,&quot;pixel-perfect UIs.&quot;,&quot;clean, fast pages.&quot;,&quot;landing pages.&quot;,&quot;online stores.&quot;]">responsive sites.</span></h1>
+
+        <p class="lead">For the last 1.5 years I&#039;ve been designing and coding websites at a web agency in Delhi. 50+ of them are live today. I write clean, mobile-first HTML, CSS and JavaScript, and use Tailwind or Bootstrap when the project needs it.</p>
+
+        <div class="hero-btns">
+          <a href="cv/Nihal_Resume.pdf" class="btn btn-lime" target="_blank" rel="noopener">
+            View Resume <svg class="ic"><use href="#i-arrow"/></svg>
+          </a>
+          <a href="#work" class="btn btn-line">See my work</a>
         </div>
 
-      </div>
-      <section id="about">
-
-      <div class="container-fluid about "  >
-        <div class="row">
-          <h2 class="section-head p-4 pt-5 text-center">About </h2>
-        </div>
-        <div class="container  pb-5" id>
-            <div class="row">
-              <div class="col-md-8 descripion">
-                <h3>Im <span class="imp"> Nihal </span> ,a Web Developer</h3>
-                <p>My portfolio is representation of all that I've learned and accomplished as a web development student. I love designing website and am looking for more opportunities to work in coding on a freelance basis so I can sharp up my skills more.</p>
-                <p>My focus is on creating responsive, user-friendly, and visually appealing web solutions tailored to clients' needs.</p>
-
-              </div>
-              <div class="col-md-4">
-                <div class="form">
-                  <ul class="list-group  " id="fom">
-                    <li class="list-group-item  ">Name: Nihal</li>
-                    <li class="list-group-item">Email: <span class="imp email">nihalpanchal8002@gmail.com</span></li>
-                    <li class="list-group-item">From: New Delhi</li>
-                    <div class="cv">
-                        <a href="cv/Nihal Resume (2).pdf"><button type="button" class="btn btn-outline-dark">Download CV</button>
-                        </a>
-                      </div>
-
-
-                  </ul>
-                </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-        </section>
-
-      <!-- my service -->
-    <div id="service">
-      <div class="container-fluid service ">
-        <div class="row">
-          <h2 class="section-head pt-5 p-4 text-center text-light">My Service</h2>
-        </div>
-        <div class="container sub-service pb-5">
-            <div class="row">
-                <div class="card">
-    
-                    <div class=" col-md-6 ser ">
-                      <div class="data">
-                
-                        <h3 class=" text-center pb-3">Web Design</h3>
-                            <p>Hi, I’m Nihal, a creative web designer with a passion for crafting visually striking and user-friendly websites. I blend aesthetics with functionality to create designs that not only look great but also deliver seamless user experiences. From sleek modern interfaces to bold, interactive layouts, my work is all about bringing ideas to life through design.
-
-                            </p>
-                      </div>
-                    </div>
-                
-                    <div class=" col-md-6 ">
-                      <div class="data">
-                
-                        <h3 class=" text-center pb-3">Web Development</h3>
-                            <p>Hi, I’m Nihl, a passionate web developer specializing in Frontend, Web Development]. I create visually stunning, responsive, and high-performing websites that bring ideas to life. Whether it's crafting seamless user experiences, optimizing performance, or building scalable web applications, I thrive on turning challenges into solutions.</p>
-                      </div>
-                    </div>
-                
-                
+                <div class="socials">
+                      <a href="https://github.com/Nihal-743" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg><use href="#i-github"/></svg></a>
+                      <a href="https://www.linkedin.com/in/nihal-singh-519897305/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+                      <a href="https://wa.me/918882111743" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg><use href="#i-whatsapp"/></svg></a>
+                      <a href="mailto:nihalpanchal8002@gmail.com" aria-label="Email" title="Email"><svg><use href="#i-mail"/></svg></a>
                   </div>
-            </div>
-          </div>
+              </div>
 
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="img/nihal.jpg" alt="Nihal" width="720" height="960">
+        </div>
+        <div class="float f1"><strong>50+</strong> live websites</div>
+        <div class="float f2"><strong>1.5+</strong> years experience</div>
+        <div class="float f3"><code>&lt;/&gt;</code> HTML · CSS · JavaScript</div>
       </div>
     </div>
-</div>
+  </section>
 
-      <!-- resume-sec -->
-    <div id="resume">
-      <div class="container-fluid resume ">
-        <div class="row">
-          <h2 class="section-head pt-5 p-4 text-center text-light">Resume</h2>
+  <!-- moving strip (list is printed twice so the loop looks seamless) -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Tailwind CSS</span><span>Bootstrap 5</span><span>Responsive Design</span><span>Git &amp; GitHub</span><span>Page Speed</span><span>On-page SEO</span>              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Tailwind CSS</span><span>Bootstrap 5</span><span>Responsive Design</span><span>Git &amp; GitHub</span><span>Page Speed</span><span>On-page SEO</span>          </div>
+  </div>
+
+  <!-- about -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="reveal">
+          <p class="eyebrow">About me</p>
+          <h2>I write the code that clients <em>actually</em> see.</h2>
+                      <p>I joined WebKey India as an intern in April 2025 and got a full-time front-end role six months later. Since then I&#039;ve worked on online stores, travel booking sites, clinics, finance blogs and service businesses. Some I built from a blank file, others were WordPress themes I reshaped to fit the brand.</p>
+                      <p>I handle the whole front-end side: layouts, responsive behaviour, forms, cross-browser testing and finally putting the site live on cPanel or Hostinger. Alongside work I&#039;m doing my MCA from IGNOU.</p>
+                  </div>
+
+        <div class="stats">
+          <div class="stat reveal"><span class="num" data-count="50">0</span><span class="plus">+</span><p>Websites live</p></div>
+          <div class="stat reveal"><span class="num">1.5</span><span class="plus">+</span><p>Years of experience</p></div>
+          <div class="stat reveal"><span class="num">All</span><p>Industries: retail, travel, health, finance and more</p></div>
+          <div class="stat reveal"><span class="num">MCA</span><p>Pursuing, IGNOU</p></div>
         </div>
-        <div class="container sub-service pb-5">
-            <div class="row">
-                <div class="card">
-    
-                    <div class=" col-md-6 ser sub-resume ">
-                      <div class="education">
-                            <h2 class="fw-600 mb-4 text-white">My Education</h2>
-                          <div class="p-3 mb-3 bg-dark-max edu">
-                              <p class=" text-2 fw-600  text-white">July 2023 - Present</p>
-                              <h4 class="text-white">Master of Computer Applications</h4>
-                              <p class="text-white ">Indra Gandhi National Open University</p>
-                            
+      </div>
+
+      <!-- quick info for recruiters -->
+      <dl class="facts reveal">
+        <div><dt>Looking for</dt><dd>Front-End Developer / Web Designer role</dd></div>
+        <div><dt>Job type</dt><dd>Full-time</dd></div>
+        <div><dt>Based in</dt><dd>Najafgarh, New Delhi</dd></div>
+        <div><dt>Preferred location</dt><dd>Delhi, Noida, Gurugram</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- projects -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Live sites I've built</h2>
+          <p class="sec-sub">Real client projects, all live right now. Click any card to open the site.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="on" data-filter="all">All</button>
+                      <button data-filter="shop">E-commerce</button>
+                      <button data-filter="travel">Travel</button>
+                      <button data-filter="other">Services &amp; more</button>
+                  </div>
+      </div>
+
+      <div class="projects" id="projects">
+                <article class="project reveal" data-cat="shop">
+          <a href="https://2by2mart.com" target="_blank" rel="noopener">
+            <div class="shot">
+              <span class="bar"><i></i><i></i><i></i>2by2mart.com</span>
+                              <img src="img/work/2by2mart.jpg" alt="2by2mart homepage" loading="lazy" width="960" height="600">
                           </div>
-
-                          <div class="p-3 mb-3  edu">
-                            <p class=" text-2 fw-600  text-white">Oct 2021 - June 2023 </p>
-                            <h4 class="text-white">Bachelor of Computer Applications</h4>
-                            <p class="text-white ">Maharshi Dayanand University</p>
-                          
-                        </div>
-
-                          <div class="p-3 mb-3  edu">
-                            <p class=" text-2 fw-600  text-white">April 2019 - May 2020 </p>
-                            <h4 class="text-white">Senior Secondary Education </h4>
-                            <p class="text-white ">C.B.S.E</p>
-                          
-                        </div>
-
-                       
-
-                        <div class="p-3 mb-3 bg-dark-max edu">
-                            <p class=" text-2 fw-600 text-white">April 2017 - May 2018</p>
-                            <h4 class="text-white">Secondary Education  </h4>
-                            <p class="text-white">C.B.S.E</p>
-                          
-                        </div>
-
-                        
-
-                        <div class="p-3 mb-3 bg-dark-max edu">
-                            <p class=" text-2 fw-600 text-white">Oct 2022- Nov-2023 </p>
-                            <h4 class="text-white">Web Development</h4>
-                            <p class="text-white">ESS Institute</p>
-                          
-                        </div>
-
-                         </div>
-                        </div>
-                    </div>
-                    <div class=" col-md-6 ">
-                        <div class="experience">
-                            <h2 class="fw-600 mb-4 text-white">My Experince</h2>
-                          <div class=" p-3 mb-2 bg-dark-max edu">
-                              <p class=" text-2 fw-600 p-2 text-white">Sep 2022 Oct 2024</p>
-                              <h4 class="text-white">Delivery Executive</h4>
-                              <p class="text-white">Blue Dart Express Limited</p>
-                              <p class="text-white">Communicating with customers for accurate drop-offs. </p>
-                              <p class="text-white">Ensuring the safety and security of packages. </p>
-                              <p class="text-white">Picking up and delivering orders safely and on time.
-                            </p>
-                            
-                          </div>
-                         </div>
-                         
-                        </div>
-
+            <div class="p-body">
+              <span class="tag">E-commerce</span>
+              <h3>2by2mart</h3>
+              <span class="go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
             </div>
+          </a>
+        </article>
+                <article class="project reveal" data-cat="travel">
+          <a href="https://jupitertravels.co" target="_blank" rel="noopener">
+            <div class="shot">
+              <span class="bar"><i></i><i></i><i></i>jupitertravels.co</span>
+                              <img src="img/work/jupitertravels.jpg" alt="Jupiter Travels homepage" loading="lazy" width="960" height="600">
+                          </div>
+            <div class="p-body">
+              <span class="tag">Tour &amp; travel</span>
+              <h3>Jupiter Travels</h3>
+              <span class="go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </article>
+                <article class="project reveal" data-cat="travel">
+          <a href="https://sirbus.com" target="_blank" rel="noopener">
+            <div class="shot">
+              <span class="bar"><i></i><i></i><i></i>sirbus.com</span>
+                              <img src="img/work/sirbus.jpg" alt="SirBus homepage" loading="lazy" width="960" height="600">
+                          </div>
+            <div class="p-body">
+              <span class="tag">Tour &amp; travel</span>
+              <h3>SirBus</h3>
+              <span class="go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </article>
+                <article class="project reveal" data-cat="other">
+          <a href="https://bethepolice.in" target="_blank" rel="noopener">
+            <div class="shot">
+              <span class="bar"><i></i><i></i><i></i>bethepolice.in</span>
+                              <img src="img/work/bethepolice.jpg" alt="Be The Police homepage" loading="lazy" width="960" height="600">
+                          </div>
+            <div class="p-body">
+              <span class="tag">Services</span>
+              <h3>Be The Police</h3>
+              <span class="go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </article>
+                <article class="project reveal" data-cat="travel">
+          <a href="https://agratourbus.com" target="_blank" rel="noopener">
+            <div class="shot">
+              <span class="bar"><i></i><i></i><i></i>agratourbus.com</span>
+                              <img src="img/work/agratourbus.jpg" alt="Agra Tour Bus homepage" loading="lazy" width="960" height="600">
+                          </div>
+            <div class="p-body">
+              <span class="tag">Tour &amp; travel</span>
+              <h3>Agra Tour Bus</h3>
+              <span class="go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </article>
+                <article class="project reveal" data-cat="shop">
+          <a href="https://chiniyabadam.com" target="_blank" rel="noopener">
+            <div class="shot">
+              <span class="bar"><i></i><i></i><i></i>chiniyabadam.com</span>
+                              <img src="img/work/chiniyabadam.jpg" alt="Chiniya Badam homepage" loading="lazy" width="960" height="600">
+                          </div>
+            <div class="p-body">
+              <span class="tag">E-commerce</span>
+              <h3>Chiniya Badam</h3>
+              <span class="go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </article>
+                <article class="project reveal" data-cat="shop">
+          <a href="https://classicleathersindia.com" target="_blank" rel="noopener">
+            <div class="shot">
+              <span class="bar"><i></i><i></i><i></i>classicleathersindia.com</span>
+                              <img src="img/work/classicleathersindia.jpg" alt="Classic Leathers India homepage" loading="lazy" width="960" height="600">
+                          </div>
+            <div class="p-body">
+              <span class="tag">E-commerce</span>
+              <h3>Classic Leathers India</h3>
+              <span class="go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </article>
+                <article class="project reveal" data-cat="travel">
+          <a href="https://iwitoursandtravels.com" target="_blank" rel="noopener">
+            <div class="shot">
+              <span class="bar"><i></i><i></i><i></i>iwitoursandtravels.com</span>
+                              <img src="img/work/iwitoursandtravels.jpg" alt="IWI Tours &amp; Travels homepage" loading="lazy" width="960" height="600">
+                          </div>
+            <div class="p-body">
+              <span class="tag">Tour &amp; travel</span>
+              <h3>IWI Tours &amp; Travels</h3>
+              <span class="go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </article>
+                <article class="project reveal" data-cat="travel">
+          <a href="https://royalranatravels.com" target="_blank" rel="noopener">
+            <div class="shot">
+              <span class="bar"><i></i><i></i><i></i>royalranatravels.com</span>
+                              <img src="img/work/royalranatravels.jpg" alt="Royal Rana Travels homepage" loading="lazy" width="960" height="600">
+                          </div>
+            <div class="p-body">
+              <span class="tag">Tour &amp; travel</span>
+              <h3>Royal Rana Travels</h3>
+              <span class="go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </article>
+                <article class="project reveal" data-cat="travel">
+          <a href="https://instasafar.in" target="_blank" rel="noopener">
+            <div class="shot">
+              <span class="bar"><i></i><i></i><i></i>instasafar.in</span>
+                              <img src="img/work/instasafar.jpg" alt="InstaSafar homepage" loading="lazy" width="960" height="600">
+                          </div>
+            <div class="p-body">
+              <span class="tag">Tour &amp; travel</span>
+              <h3>InstaSafar</h3>
+              <span class="go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </article>
+                <article class="project reveal" data-cat="other">
+          <a href="https://physiodevotion.com" target="_blank" rel="noopener">
+            <div class="shot">
+              <span class="bar"><i></i><i></i><i></i>physiodevotion.com</span>
+                              <img src="img/work/physiodevotion.jpg" alt="Physio Devotion homepage" loading="lazy" width="960" height="600">
+                          </div>
+            <div class="p-body">
+              <span class="tag">Healthcare</span>
+              <h3>Physio Devotion</h3>
+              <span class="go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </article>
+                <article class="project reveal" data-cat="other">
+          <a href="https://ahktips.com" target="_blank" rel="noopener">
+            <div class="shot">
+              <span class="bar"><i></i><i></i><i></i>ahktips.com</span>
+                              <img src="img/work/ahktips.jpg" alt="AHK Tips homepage" loading="lazy" width="960" height="600">
+                          </div>
+            <div class="p-body">
+              <span class="tag">Finance</span>
+              <h3>AHK Tips</h3>
+              <span class="go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </article>
+              </div>
+
+              <p class="more reveal">That&#039;s 12 out of 50+. Happy to show you the rest on a call.</p>
           </div>
+  </section>
 
+  <!-- experience -->
+  <section class="section" id="experience">
+    <div class="container split">
+      <div class="split-head reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've worked</h2>
+        <p class="sec-sub">1.5+ years building websites at an agency. Before that, two years in logistics with Blue Dart.</p>
+      </div>
 
+      <ol class="timeline">
+                <li class="reveal current">
+          <span class="date">Oct 2025 - Present</span>
+          <h3>Web Designer / Front-end Developer</h3>
+          <p class="company">WebKey India, New Delhi</p>
+                    <ul>
+            <li>Designed, built and deployed 50+ responsive client websites using HTML, CSS, JavaScript, Bootstrap, Tailwind, React and WordPress.</li><li>Built custom UIs from scratch for 2by2mart, Jupiter Travels, SirBus and Be The Police.</li><li>Take care of deployment end to end: domains, hosting, cPanel and Hostinger hPanel, plus maintenance after launch.</li><li>Test on different browsers and phones, and keep the page structure clean for SEO.</li><li>Work with the SEO, ads and content teams so projects go out on the client&#039;s deadline.</li>          </ul>
+                  </li>
+                <li class="reveal">
+          <span class="date">Apr 2025 - Sep 2025</span>
+          <h3>Web Designer Intern</h3>
+          <p class="company">WebKey India, New Delhi</p>
+                    <ul>
+            <li>Worked on real client projects under a senior developer.</li><li>Customised WordPress and HTML themes (layouts, colours, typography, new pages) to match each brand.</li><li>Built contact and enquiry forms with JavaScript validation.</li>          </ul>
+                  </li>
+                <li class="reveal">
+          <span class="date">Oct 2022 - Nov 2024</span>
+          <h3>Delivery Associate</h3>
+          <p class="company">Blue Dart Express Ltd., New Delhi</p>
+                    <ul>
+            <li>Managed daily delivery schedules and high-value shipments. This job taught me to be on time, every time.</li>          </ul>
+                  </li>
+              </ol>
+    </div>
+  </section>
 
-                    <div class="container">
-                        <div class="row gx-5">
-                            <h4 class="fw-600 mt-4 mb-4 text-white">My Skills</h4>
+  <!-- skills -->
+  <section class="section" id="skills">
+    <div class="container split">
+      <div class="split-head reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>My toolkit</h2>
+        <p class="sec-sub">Front-end is what I do every day. Things marked <em class="lvl">basic</em> I can work with and fix, but I&#039;m still learning them.</p>
+      </div>
 
-                            <div class="col-md-6">
-                                <p class="text-start mb-2 text-light">HTML/CSS
-                                    <span class="float-end">
-                                        85%
-                                    </span>
-                                </p>
-                                <div class="progress progress-sm mb-4 ">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:85%; height:16px;"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <p class="text-start mb-2 text-light">Javascript
-                                    <span class="float-end">
-                                        65%
-                                    </span>
-                                </p>
-                                <div class="progress progress-sm mb-4 ">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:65%; height:16px;"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <p class="text-start mb-2 text-light">Bootstrap
-                                    <span class="float-end">
-                                        80%
-                                    </span>
-                                </p>
-                                <div class="progress progress-sm mb-4 ">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%; height:16px;"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <p class="text-start mb-2 text-light">Jquery
-                                    <span class="float-end">
-                                        62%
-                                    </span>
-                                </p>
-                                <div class="progress progress-sm mb-4 ">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:62%; height:16px;"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <p class="text-start mb-2 text-light">PhotoShop/Illustrator
-                                    <span class="float-end">
-                                        60%
-                                    </span>
-                                </p>
-                                <div class="progress progress-sm mb-4 ">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%; height:16px;"></div>
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                    <div class="text-center mt-5 pb-3">
-                        <a href="cv/Nihal Resume (2).pdf" class="btn btn-outline-secondary rounded-pill shadow-none px-5 py-2">
-                            Download CV
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <!-- project-sec -->
-             <div id="project">
-             
-            <div class="container-fluid project ">
-              <div class="row">
-                <h2 class="section-head pt-5 mt-2 p-4 text-center text-light">Project</h2>
+      <div class="skill-rows">
+                <div class="skill-row reveal">
+          <h3>Front-end <span class="main-tag">Main stack</span></h3>
+          <ul class="chips">
+                          <li class="hot">HTML5</li>
+                          <li class="hot">CSS3</li>
+                          <li class="hot">JavaScript ES6+</li>
+                          <li class="hot">Tailwind CSS</li>
+                          <li class="hot">Bootstrap 5</li>
+                          <li>Responsive design</li>
+                          <li>React.js <em class="lvl">basic</em></li>
+                          <li>jQuery <em class="lvl">basic</em></li>
+                      </ul>
+        </div>
+                <div class="skill-row reveal">
+          <h3>CMS &amp; back-end</h3>
+          <ul class="chips">
+                          <li>WordPress <em class="lvl">basic</em></li>
+                          <li>WooCommerce <em class="lvl">basic</em></li>
+                          <li>PHP <em class="lvl">basic</em></li>
+                          <li>MySQL <em class="lvl">basic</em></li>
+                      </ul>
+        </div>
+                <div class="skill-row reveal">
+          <h3>Strengths</h3>
+          <ul class="chips">
+                          <li>Mobile-first layouts</li>
+                          <li>Pixel-perfect UI</li>
+                          <li>Landing pages</li>
+                          <li>E-commerce sites</li>
+                          <li>Cross-browser fixes</li>
+                          <li>Page speed</li>
+                          <li>On-page SEO</li>
+                      </ul>
+        </div>
+                <div class="skill-row reveal">
+          <h3>Tools</h3>
+          <ul class="chips">
+                          <li>VS Code</li>
+                          <li>Chrome DevTools</li>
+                          <li>Git &amp; GitHub</li>
+                          <li>GitHub Pages</li>
+                          <li>cPanel</li>
+                          <li>Hostinger hPanel</li>
+                      </ul>
+        </div>
+                <div class="skill-row reveal">
+          <h3>Soft skills</h3>
+          <ul class="chips">
+                          <li>Team collaboration</li>
+                          <li>Client communication</li>
+                          <li>Time management</li>
+                          <li>Problem solving</li>
+                          <li>English &amp; Hindi</li>
+                      </ul>
+        </div>
               </div>
+    </div>
+  </section>
 
-              <div class="container project-sec pb-5 ">
-                <div class="row m- g-5">
+  <!-- how i work -->
+    <section class="section" id="process">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">How I work</p>
+          <h2>From brief to live site</h2>
+          <p class="sec-sub">Roughly the steps every project goes through on my desk.</p>
+        </div>
+      </div>
 
-                  <div class="col-sm-6 col-lg-4 row-1">
-                    <div class="row">
-                        <div class="col-12">
-                            <a href="" target="_blank">
-                                <img src="img/architect.jpg" alt="" class="mb-4 img-fluid">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a href="https://my-blog-temp.netlify.app/" target="_blank">
-                                <img src="img/blog.jpg" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 row-2">
-                  <a href="" target="_blank">
-                      <img src="img/netflix.webp" alt="" class="janeImg img-fluid">
-                  </a>
-              </div>
-
-              <div class="col-sm-6 col-lg-4 row-3">
-                <div class="row">
-                    <div class="col-12">
-                        <a href="https://stirring-quokka-279e90.netlify.app/" target="_blank">
-                            <img src="img/jane.jpg" alt="" class="mb-4 img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a href="https://br-nihal-temp.netlify.app/" target="_blank">
-                            <img src="img/architect.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-                </div>
-              </div>
-              </div>
-            </div>
-
-              <!-- contact-sec -->
-               <div id="contact">
-
-              <div class="container-fluid resume pb-5 ">
-                <div class="row">
-                  <h2 class="section-head pt-5 p-4 text-center text-light">Get in Touch</h2>
-                </div>
-                <div class="container contact-sec">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="contact ml-5">
-                        <div class="mb-3 pb-2 bg-dark-max cont">
-                          <p><span><i class="fa-solid fa-phone px-3"></i></span>8882111743</p>
-                        
-                      </div>
-                        <div class="mb-3 pb-2 bg-dark-max cont">
-                          <p><span><i class="fa-regular fa-envelope px-3"></i></span>nihalpanchal8002@gmail.com</p>
-                        
-                      </div>
-                        <div class=" mb-3 pb-2 bg-dark-max cont">
-                          <p><span><i class="fa-solid fa-location-dot px-3"></i></span>H.no 347 Najafgarh Delhi - 110043</p>
-                          </div>
-                        </div>
-                      </div>
-                   
-                    <div class="col-md-8 col-lg-8">
-                      <div class="contact-form">
-                        <form action="">
-                          <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label text-light">Name</label>
-                            <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="Name">
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label text-light">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label text-light">Textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tell us more about your needs..." rows="3"></textarea>
-                          </div>
-                          <div class="col-auto">
-                            <button type="submit" class=" btnn mb-3">Send Message</button>
-                          </div>
-
-                        </form>
-
-                      </div>
-                      </div>
-
-                </div>
-              </div>
-              </div>
-            </div>
-
-            <footer class="container-fluid footer">
-              <p><i class="fa-regular fa-copyright px-3"></i>2025.Made with by <span class="imp">Nihal</span></p>
-
-            </footer>
+      <ol class="steps">
+                <li class="step reveal">
+          <span class="step-no">01</span>
+          <h3>Understand the brief</h3>
+          <p>Sit with the SEO, ads and content team to know who the site is for and what it has to do.</p>
+        </li>
+                <li class="step reveal">
+          <span class="step-no">02</span>
+          <h3>Design &amp; build</h3>
+          <p>Mobile-first layout in HTML, CSS and JavaScript. Tailwind or Bootstrap if it speeds things up.</p>
+        </li>
+                <li class="step reveal">
+          <span class="step-no">03</span>
+          <h3>Test everywhere</h3>
+          <p>Chrome, Firefox, Safari, phones and tablets. Forms, speed and on-page SEO get checked too.</p>
+        </li>
+                <li class="step reveal">
+          <span class="step-no">04</span>
+          <h3>Go live &amp; maintain</h3>
+          <p>Domain, hosting and deployment on cPanel or hPanel, then updates once the site is out.</p>
+        </li>
+              </ol>
+    </div>
+  </section>
   
-            
+  <!-- education -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="reveal">
+        <p class="eyebrow">Education</p>
+        <h2>Still learning</h2>
+      </div>
 
+      <div class="edu-grid">
+                <div class="edu reveal">
+          <span class="date">2023 - Present</span>
+          <h3>Master of Computer Applications</h3>
+          <p>IGNOU <span class="pill">Pursuing</span></p>
+        </div>
+                <div class="edu reveal">
+          <span class="date">2020 - 2023</span>
+          <h3>Bachelor of Computer Applications</h3>
+          <p>MDU, Rohtak</p>
+        </div>
+                <div class="edu reveal">
+          <span class="date">2023 - 2024</span>
+          <h3>Certification in Web Development</h3>
+          <p>ESS Institute</p>
+        </div>
+                <div class="edu reveal">
+          <span class="date">2020 / 2018</span>
+          <h3>Class XII &amp; Class X</h3>
+          <p>CBSE</p>
+        </div>
+              </div>
+    </div>
+  </section>
 
-                
-                 
-            
+  <!-- contact -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Hiring a front-end developer? <em>Let&#039;s talk.</em></h2>
+        <p class="contact-lead">I&#039;m looking for a full-time front-end developer or web designer role in Delhi, Noida or Gurugram. I usually reply the same day, by call, WhatsApp or email.</p>
 
-    
+                <ul class="c-list">
+                    <li>
+            <span class="c-ic"><svg><use href="#i-mail"/></svg></span>
+            <div><small>Email</small><a href="mailto:nihalpanchal8002@gmail.com">nihalpanchal8002@gmail.com</a></div>
+            <button type="button" class="copy" data-copy="nihalpanchal8002@gmail.com">Copy</button>
+          </li>
+                              <li>
+            <span class="c-ic"><svg><use href="#i-phone"/></svg></span>
+            <div><small>Phone</small><a href="tel:+918882111743">+91 88821 11743</a></div>
+          </li>
+                              <li>
+            <span class="c-ic"><svg><use href="#i-whatsapp"/></svg></span>
+            <div><small>WhatsApp</small><a href="https://wa.me/918882111743" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+          </li>
+                              <li>
+            <span class="c-ic"><svg><use href="#i-pin"/></svg></span>
+            <div><small>Location</small><span>Najafgarh, New Delhi</span></div>
+          </li>
+                  </ul>
+        
+        <a href="cv/Nihal_Resume.pdf" class="btn btn-line cv-link" target="_blank" rel="noopener">
+          View my resume (PDF) <svg class="ic"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
 
+      <form class="form reveal" id="form" action="enquiry.php" method="post" novalidate data-wa="918882111743">
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Rahul Sharma">
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="f-contact">Email or phone</label>
+          <input id="f-contact" name="contact" type="text" autocomplete="email" required placeholder="So I can get back to you">
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="f-company">Company <span class="opt">(optional)</span></label>
+          <input id="f-company" name="company" type="text" autocomplete="organization" placeholder="Where you're hiring for">
+        </div>
+        <div class="field">
+          <label for="f-msg">Message</label>
+          <textarea id="f-msg" name="message" rows="4" required placeholder="Tell me about the role..."></textarea>
+          <span class="err"></span>
+        </div>
 
+        <!-- spam trap, hidden from people -->
+        <div class="hp" aria-hidden="true">
+          <label for="f-website">Website</label>
+          <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
 
-      <script src="javascript.js"></script>
+        <button type="submit" class="btn btn-lime btn-block" id="sendBtn">Send message</button>
+        <p class="form-note" id="formNote">Or message me directly on <a href="https://wa.me/918882111743" target="_blank" rel="noopener">WhatsApp</a>.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-in">
+    <a href="#top" class="logo" aria-label="Nihal">
+      <span class="logo-name">nihal<i>.</i></span>
+      <span class="logo-role">Front-End Developer<b> · Web Designer</b></span>    </a>
+    <p>Designed &amp; coded by Nihal. &copy; <span id="year">2026</span></p>
+        <div class="socials socials-sm">
+              <a href="https://github.com/Nihal-743" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg><use href="#i-github"/></svg></a>
+              <a href="https://www.linkedin.com/in/nihal-singh-519897305/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+              <a href="https://wa.me/918882111743" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg><use href="#i-whatsapp"/></svg></a>
+              <a href="mailto:nihalpanchal8002@gmail.com" aria-label="Email" title="Email"><svg><use href="#i-mail"/></svg></a>
+          </div>
+      </div>
+</footer>
+
+<a href="#top" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+
+<script src="script.js?v=1791052204"></script>
 </body>
 </html>
